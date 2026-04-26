@@ -19,6 +19,8 @@ npm run dev
 6. Open **Actions → Deploy to GitHub Pages** and wait for green checks.
 7. Your live URL appears in the deploy job output and in **Settings → Pages**.
 
+> If GitHub Actions reports `Dependencies lock file is not found`, run `npm install` locally once and commit the generated `package-lock.json` file.
+
 ## Routing note
 
 This app uses `HashRouter` to avoid 404 issues on GitHub Pages for routes like `/about` and `/buy`.
